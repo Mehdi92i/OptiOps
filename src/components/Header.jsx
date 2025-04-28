@@ -9,6 +9,7 @@ export default function Header() {
                     <span className="text-yellow-500">Ops</span>
                 </Link>
                 <div className="space-x-6">
+                    <Link href="/cv" className="text-gray-700 hover:text-green-600">CV</Link>
                     <Link href="/about" className="text-gray-700 hover:text-green-600">À propos</Link>
                     <Link href="/services" className="text-gray-700 hover:text-green-600">Services</Link>
                     <Link href="/contact" className="text-gray-700 hover:text-green-600">Contact</Link>

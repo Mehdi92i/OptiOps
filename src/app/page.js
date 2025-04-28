@@ -9,7 +9,7 @@ export default function Home() {
         </span>
             </h1>
             <p className="text-base md:text-lg text-center max-w-md text-yellow-700">
-                Experts en optimisation QA et structuration Design System pour vos projets numériques.
+                Experts en optimisation QA pour vos projets numériques.
             </p>
         </>
     );
