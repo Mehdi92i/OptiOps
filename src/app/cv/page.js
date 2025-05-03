@@ -10,23 +10,27 @@ import CvTravels from '@/components/cv/CvTravels';
 
 export default function Cv() {
     return (
-        <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12 py-10 space-y-12">
-            <CvIntro />
-            <Separator />
+        <div className="relative min-h-screen">
+            {/* Arrière-plan dégradé couvrant toute la page */}
+            <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#D70064] via-[#412761] to-[#002364]" />
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {/* Colonne gauche : expériences (2/3) */}
-                <CvExperiences />
-
-                {/* Colonne droite : le reste (1/3) */}
-                <div className="space-y-8">
-                    <CvSkills />
+            {/* Contenu principal */}
+            <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12 py-10">
+                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg border border-white/30 space-y-12">
+                    <CvIntro />
                     <Separator />
-                    <CvTools />
-                    <Separator />
-                    <CvLeisure />
-                    <Separator />
-                    <CvTravels />
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <CvExperiences />
+                        <div className="space-y-8">
+                            <CvSkills />
+                            <Separator />
+                            <CvTools />
+                            <Separator />
+                            <CvLeisure />
+                            <Separator />
+                            <CvTravels />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

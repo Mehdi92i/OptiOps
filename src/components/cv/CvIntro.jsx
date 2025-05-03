@@ -1,6 +1,6 @@
 export default function CvIntro() {
     return (
-        <div className="lg:col-span-2 bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow duration-300 space-y-8">
+        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/30">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 tracking-tight text-center">
                 Curriculum <span className="text-yellow-500">Vitae</span>
             </h1>

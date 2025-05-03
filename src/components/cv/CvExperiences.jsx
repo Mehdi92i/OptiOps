@@ -1,6 +1,6 @@
 export default function CvExperiences() {
     return (
-        <div className="lg:col-span-2 bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow duration-300 space-y-8">
+        <div className="lg:col-span-2 bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-white/30 space-y-8">
         <div className="text-center">
                 <h2 className="text-2xl md:text-3xl font-bold text-yellow-500 mb-6">Expériences professionnelles</h2>
             </div>
