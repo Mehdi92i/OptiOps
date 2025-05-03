@@ -25,19 +25,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent);
   letter-spacing: -0.5px;
 }
-@keyframes bgMove {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
-}
 body.cv-page {
   background: linear-gradient(to bottom right, #D70064, #412761, #002364);
   background-size: cover;
   background-attachment: fixed;
-}
-.cv-block {
-  @apply bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg border border-white/30 space-y-8;
 }

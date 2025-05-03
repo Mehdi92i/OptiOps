@@ -16,7 +16,6 @@ export default function Cv() {
 
             {/* Contenu principal */}
             <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12 py-10">
-                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg border border-white/30 space-y-12">
                     <CvIntro />
                     <Separator />
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -32,7 +31,6 @@ export default function Cv() {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     );
 }

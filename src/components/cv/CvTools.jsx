@@ -7,7 +7,7 @@ export default function CvTools() {
                     <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">Frameworks & Librairies</h3>
                     <div className="flex flex-wrap gap-2">
                         {["🧪 Cypress", "🧭 Selenium WebDriver", "📦 Jest", "🧰 Katalon"].map((tool, i) => (
-                            <span key={i} className="flex items-center gap-1 bg-yellow-50 text-gray-800 border border-gray-200 px-3 py-1 rounded-full text-sm font-medium hover:bg-yellow-100 transition">
+                            <span key={i} className="flex items-center gap-1 text-gray-800 border border-gray-200 px-3 py-1 rounded-full text-sm font-medium">
                                 {tool}
                             </span>
                         ))}
@@ -17,7 +17,7 @@ export default function CvTools() {
                     <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">Logiciels & Plateformes</h3>
                     <div className="flex flex-wrap gap-2">
                         {["📮 Postman", "🐙 GitHub", "🦊 GitLab", "📊 JMeter", "🔧 Retool"].map((tool, i) => (
-                            <span key={i} className="flex items-center gap-1 bg-yellow-50 text-gray-800 border border-gray-200 px-3 py-1 rounded-full text-sm font-medium hover:bg-yellow-100 transition">
+                            <span key={i} className="flex items-center gap-1 text-gray-800 border border-gray-200 px-3 py-1 rounded-full text-sm font-medium">
                                 {tool}
                             </span>
                         ))}
