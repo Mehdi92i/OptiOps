@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer'; // ➔ on importe ton Footer
 
 export const metadata = {
-    title: 'OptiOps - QA & Design System Experts',
+    title: 'OptiOps- Tassi Mehdi - Expert QA',
     description: 'Optimisez votre qualité logicielle et structurez vos Design Systems avec OptiOps.',
 };
 
