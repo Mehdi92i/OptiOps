@@ -38,3 +38,6 @@ body.cv-page {
   background-size: cover;
   background-attachment: fixed;
 }
+.cv-block {
+  @apply bg-white/90 backdrop-blur-sm rounded-lg p-8 shadow-lg border border-white/30 space-y-8;
+}
