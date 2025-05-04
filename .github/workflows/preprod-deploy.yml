@@ -7,7 +7,7 @@ on:
 
 jobs:
   preproduction:
-    name: Build preprod
+    name: Build preprod (preview)
     runs-on: ubuntu-latest
 
     env:
