@@ -1,4 +1,8 @@
-'use client';
+export const metadata = {
+    title: 'OptiOps – Optimisation QA',
+    description: 'Structuration qualité, stratégie QA, automatisation de test, intégration continue..',
+    keywords: ['QA', 'Quality Assurance', 'Cypress', 'Next.js', 'Automation', 'Freelance QA', 'DevOps']
+};
 
 export default function About() {
     return (
@@ -14,7 +18,7 @@ export default function About() {
                         <span className="text-[#FFD700]"> propos</span>
                     </h1>
                     <p className="text-base md:text-lg text-center text-gray-700">
-                        Chez <span className="font-bold text-[#D70064]">OptiOps</span>, nous combinons expertise en QA et Design System pour aider les entreprises à construire des produits fiables, accessibles et durables.
+                        Chez <span className="font-bold text-[#D70064]">OptiOps</span>, L&#39;expertise  QA pour aider votre entreprises à construire des produits fiables, accessibles et durables.
                     </p>
                 </div>
             </div>

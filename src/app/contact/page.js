@@ -1,4 +1,8 @@
-'use client';
+export const metadata = {
+    title: 'OptiOps – Optimisation QA',
+    description: 'Structuration qualité, stratégie QA, automatisation de test, intégration continue..',
+    keywords: ['QA', 'Quality Assurance', 'Cypress', 'Next.js', 'Automation', 'Freelance QA', 'DevOps']
+};
 
 import ContactForm from '@/components/contact/ContactForm';
 
