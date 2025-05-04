@@ -1,0 +1,33 @@
+name: CI - Dev branches
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - preprod
+
+jobs:
+  dev-ci:
+    name: Lint & Build on dev branches
+    runs-on: ubuntu-latest
+
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build

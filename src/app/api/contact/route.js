@@ -21,7 +21,7 @@ export async function POST(req) {
         <h2>📨 Nouveau message reçu via le formulaire</h2>
         <p><strong>Nom :</strong> ${name}</p>
         <p><strong>Email :</strong> ${email}</p>
-        <p><strong>Message :</strong></p>
+        <p><strong>Message :</strong></p> 
         <p>${message.replace(/\n/g, '<br />')}</p>
       `,
         });
