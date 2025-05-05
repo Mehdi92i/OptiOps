@@ -2,10 +2,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9fafb;   /* Gris très clair pour fond */
-  --foreground: #1f2937;   /* Gris foncé pour texte */
-  --accent: #facc15;       /* Jaune pour titres et éléments importants */
+  --background: #f9fafb;
+  --foreground: #1f2937;
+
+  /* Accent principal : le bleu Opti */
+  --accent: #002364;
+  /* Accent soncondaire */
+  --accent-alt: #D70064;
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -22,7 +27,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent); /* Bleu Opti */
   letter-spacing: -0.5px;
 }
 body.cv-page {
