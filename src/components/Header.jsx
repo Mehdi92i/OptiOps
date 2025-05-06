@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import BugHuntGame from '@/components/game/BugHuntGame'; // adapte le chemin si besoin
+import BugHuntGame from '@/components/game/BugHuntGame';
 
 export default function Header() {
     const pathname = usePathname();
