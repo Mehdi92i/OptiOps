@@ -1,32 +1,18 @@
-import { useRef, useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const BugHuntGame = () => {
     const [isActive, setIsActive] = useState(false);
     const [bugs, setBugs] = useState([]);
     const [score, setScore] = useState(0);
-    const [showFinalScore, setShowFinalScore] = useState(false);
 
-    const timeoutRef = useRef(null);
-    const intervalRef = useRef(null);
-
-    const startGame = () => {
-        setIsActive(true);
-        setScore(0);
-        setBugs([]);
-        setShowFinalScore(false);
-
-        intervalRef.current = setInterval(spawnBug, 800);
-        timeoutRef.current = setTimeout(() => {
-            stopGame();
-        }, 30000);
-    };
-
-    const stopGame = () => {
-        clearInterval(intervalRef.current);
-        clearTimeout(timeoutRef.current);
-        setIsActive(false);
-        setBugs([]);
-        setShowFinalScore(true);
+    const toggleGame = () => {
+        if (isActive) {
+            setIsActive(false);
+            setBugs([]);
+        } else {
+            setIsActive(true);
+            setScore(0);
+        }
     };
 
     const spawnBug = () => {
@@ -50,30 +36,27 @@ const BugHuntGame = () => {
     };
 
     useEffect(() => {
-        if (showFinalScore) {
-            const timer = setTimeout(() => setShowFinalScore(false), 5000);
-            return () => clearTimeout(timer);
-        }
-    }, [showFinalScore]);
+        if (!isActive) return;
+        const interval = setInterval(spawnBug, 800);
+        const timeout = setTimeout(() => setIsActive(false), 30000);
+        return () => {
+            clearInterval(interval);
+            clearTimeout(timeout);
+        };
+    }, [isActive]);
 
     return (
         <div className="relative">
             <button
-                onClick={isActive ? stopGame : startGame}
+                onClick={toggleGame}
                 className="bg-gradient-to-r from-pink-600 to-blue-900 text-white font-bold py-2 px-4 rounded-full shadow-xl hover:scale-105 transition"
             >
                 {isActive ? 'Arrêter la chasse' : 'Chasser un bug 🐞'}
             </button>
 
-            {showFinalScore && !isActive && (
-                <div className="fixed top-[4.5rem] right-4 z-50 bg-white text-[#002364] font-semibold shadow-md px-4 py-2 rounded-full border border-pink-300 text-sm">
-                    🎉 Partie terminée ! Tu as attrapé <span className="text-pink-600">{score}</span> bugs !
-                </div>
-            )}
-
             {isActive && (
-                <div className="fixed inset-0 z-50">
-                    <div className="absolute top-4 right-4 text-white text-lg bg-black/70 px-3 py-1 rounded-full shadow-md">
+                <div>
+                    <div className="fixed top-4 right-4 text-white text-lg bg-black/70 px-3 py-1 rounded-full shadow-md">
                         Score : {score}
                     </div>
 
@@ -81,7 +64,7 @@ const BugHuntGame = () => {
                         <div
                             key={bug.id}
                             onClick={() => hitBug(bug.id)}
-                            className="absolute cursor-pointer animate-pulse"
+                            className="fixed cursor-pointer animate-pulse"
                             style={{
                                 top: `${bug.y}vh`,
                                 left: `${bug.x}vw`,
