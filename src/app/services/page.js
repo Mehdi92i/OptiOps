@@ -82,9 +82,11 @@ export default function Services() {
                     </button>
 
                     <div
+                        key={services[currentSlide].id}
                         id={services[currentSlide].id}
-                        className="bg-white/90 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center space-y-4 w-[320px] sm:w-[400px] md:w-[500px]"
+                        className="cursor-default bg-white/90 rounded-xl p-8 shadow-lg hover:shadow-xl text-center space-y-4 w-[320px] sm:w-[400px] md:w-[500px] transition-all duration-500 ease-in-out opacity-0 animate-fade-in"
                     >
+
                         <div className={`text-5xl ${services[currentSlide].color}`}>
                             {services[currentSlide].icon}
                         </div>
