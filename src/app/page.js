@@ -21,35 +21,53 @@ export default function Home() {
             {/* Fond dégradé comme le CV */}
             <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#D70064] via-[#412761] to-[#002364]" />
 
-            <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12 py-20 flex flex-col items-center space-y-12">
+            <div className="w-full max-w-screen-xl mx-auto px-6 lg:px-12 py-20 flex flex-col items-center space-y-16">
                 <div className="bg-white/90 backdrop-blur-sm border border-white/30 shadow-lg rounded-lg p-10 text-center space-y-6 max-w-2xl">
                     <h1 className="text-3xl md:text-5xl font-bold">
-                        Bienvenue chez <span className="text-[#002364]">Opti</span>
-                        <span className="text-[#D70064]">Ops</span>
+                        Structurer la qualité. <br />
+                        Accélérer le delivery.
                     </h1>
 
-                    <div className="space-y-4 text-gray-700 text-base md:text-lg">
-                        <p>
-                            Vous développez des produits ambitieux ? Je vous aide à mettre en
-                            place une démarche qualité solide, efficace et adaptée à votre
-                            rythme de delivery.
-                        </p>
-                        <p>
-                            Fort de plus de 10 ans d’expérience, je conçois des stratégies QA
-                            sur mesure, j’automatise les tests (E2E, API, performance) et
-                            j’intègre la qualité dans vos chaînes CI/CD.
-                        </p>
-                        <p>
-                            Objectif : des livraisons fiables, des équipes responsabilisées,
-                            et des retours utilisateurs sereins.
-                        </p>
-                        <p className="italic text-gray-800 mt-4">
-                            ➜ Vous voulez structurer votre QA ou sécuriser votre delivery ?
-                            Parlons-en.
-                        </p>
-                    </div>
+                    <p className="text-lg md:text-xl text-gray-700">
+                        Bienvenue chez <span className="text-[#002364]">Opti</span>
+                        <span className="text-[#D70064]">Ops</span>, un accompagnement
+                        freelance sur-mesure en qualité logicielle.
+                    </p>
+
+                    <p className="italic text-gray-800 mt-4 text-center">
+                        ➜ Vous voulez fiabiliser vos livraisons et gagner en sérénité ?
+                        Contactez-moi.
+                    </p>
                 </div>
 
+                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-5xl px-4">
+                    <div className="bg-white/90 text-[#D70064] rounded-2xl p-6 shadow-lg text-center flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                        <span className="text-4xl mb-2">🎯</span>
+                        <h3 className="font-bold text-lg">Stratégie QA</h3>
+                        <p className="text-sm text-gray-700 mt-1">Alignée produit & delivery</p>
+                    </div>
+
+                    <div className="bg-white/90 text-[#412761] rounded-2xl p-6 shadow-lg text-center flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                        <span className="text-4xl mb-2">🧪</span>
+                        <h3 className="font-bold text-lg">Tests automatisés</h3>
+                        <p className="text-sm text-gray-700 mt-1">E2E, API, Performance</p>
+                    </div>
+
+                    <div className="bg-white/90 text-[#002364] rounded-2xl p-6 shadow-lg text-center flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                        <span className="text-4xl mb-2">⚙️</span>
+                        <h3 className="font-bold text-lg">CI/CD & QAOps</h3>
+                        <p className="text-sm text-gray-700 mt-1">Intégration continue</p>
+                    </div>
+
+                    <div className="bg-white/90 text-[#D70064] rounded-2xl p-6 shadow-lg text-center flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                        <span className="text-4xl mb-2">🤝</span>
+                        <h3 className="font-bold text-lg">Accompagnement</h3>
+                        <p className="text-sm text-gray-700 mt-1">Audit, support, coaching</p>
+                    </div>
+                </section>
+
+
+                {/* CTA */}
                 <div className="flex flex-wrap justify-center gap-6">
                     <Link
                         href="/about"
