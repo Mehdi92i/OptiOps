@@ -15,7 +15,7 @@ export default function Header() {
     ];
 
     return (
-        <header className="sticky top-0-50 backdrop-blur-md bg-white/70 border-b border-white/20 shadow-sm">
+        <header className="sticky top-0 z-40 backdrop-blur-md bg-white/70 border-b border-white/20 shadow-sm">
             <div className="max-w-screen-xl mx-auto">
                 <nav className="flex items-center justify-between px-6 py-4">
                     {/* Bloc logo */}
