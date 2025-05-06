@@ -65,8 +65,8 @@ export default function CvExperiences() {
 
                     </div>
                 </div>
-                <hr className="border-t-4 border-yellow-500 w-64 mx-auto rounded-full my-12" />
-                {/* Poste Lead QA Skilleos détaillé */}
+            <hr className="border-t-4 border-[#D70064] w-64 mx-auto rounded-full my-12" />
+            {/* Poste Lead QA Skilleos détaillé */}
                 <div className="space-y-6">
                     <h3 className="text-xl font-semibold text-gray-800">Lead QA – Skilleos</h3>
                     <p className="text-sm text-gray-600 mb-4">Juillet 2021 – 2023</p>
@@ -142,7 +142,7 @@ export default function CvExperiences() {
                         </div>
                     </div>
                 </div>
-                <hr className="border-t-4 border-yellow-500 w-64 mx-auto rounded-full my-12" />
+                <hr className="border-t-4 border-[#D70064] w-64 mx-auto rounded-full my-12" />
                 {/* Poste Lead QA FlexyBeauty/Kiute détaillé */}
                 <div className="space-y-6">
                     <h3 className="text-xl font-semibold text-gray-800">Lead QA – FlexyBeauty/Kiute</h3>
@@ -203,7 +203,7 @@ export default function CvExperiences() {
 
                     </div>
                 </div>
-                <hr className="border-t-4 border-yellow-500 w-64 mx-auto rounded-full my-12" />
+                <hr className="border-t-4 border-[#D70064] w-64 mx-auto rounded-full my-12" />
                 {/* Poste QA Test Automation Engineer – Aviva */}
                 <div className="space-y-6">
                     <h3 className="text-xl font-semibold text-gray-800">QA Test Automation Engineer – Aviva</h3>
@@ -264,7 +264,7 @@ export default function CvExperiences() {
 
                     </div>
                 </div>
-                <hr className="border-t-4 border-yellow-500 w-64 mx-auto rounded-full my-12" />
+                <hr className="border-t-4 border-[#D70064] w-64 mx-auto rounded-full my-12" />
                 {/* Poste Chef de projet Test Junior – AXA Banque */}
                 <div className="space-y-6">
                     <h3 className="text-xl font-semibold text-gray-800">Chef de projet Test Junior – AXA Banque</h3>
