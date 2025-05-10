@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import RecommendationCarousel from '@/components/ui/RecommendationCarousel';
 
 export const metadata = {
     title: 'OptiOps – Optimisation QA',
@@ -100,6 +101,7 @@ export default function Home() {
                     </Link>
                 </div>
             </div>
+            <RecommendationCarousel />
         </div>
     );
 }
