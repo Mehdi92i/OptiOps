@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import BugHuntGame from '@/components/game/BugHuntGame';
+import { SiLinkedin } from 'react-icons/si'; // ✅ remplacement
 
 export default function Header() {
     const pathname = usePathname();
@@ -26,8 +27,20 @@ export default function Header() {
 
                     {/* Bloc bouton + liens */}
                     <div className="flex items-center gap-6">
-                        {/* Bouton jeu */}
-                        <BugHuntGame />
+                        {/* Bouton jeu + LinkedIn */}
+                        <div className="flex items-center gap-3">
+                            <BugHuntGame />
+
+                            <a
+                                href="https://www.linkedin.com/in/mehdi-t-4505a38b/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Voir mon profil LinkedIn"
+                                className="w-9 h-9 flex items-center justify-center rounded-full bg-white hover:bg-[#e6f0fb] shadow text-[#0A66C2] hover:text-[#084d99] transition-transform transform hover:scale-110"
+                            >
+                                <SiLinkedin className="w-5 h-5" />
+                            </a>
+                        </div>
 
                         {/* Liens à droite */}
                         <div className="flex gap-3 items-center text-sm font-semibold">
@@ -47,9 +60,5 @@ export default function Header() {
                 </nav>
             </div>
         </header>
-
-
-
-
     );
 }

@@ -16,6 +16,7 @@ export default function ContactForm() {
             name: form.name.value,
             email: form.email.value,
             message: form.message.value,
+            type: form.type.value,
         };
 
         try {
@@ -77,6 +78,31 @@ export default function ContactForm() {
                         className="w-full rounded px-4 py-2 bg-white/80 text-gray-800 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D70064]"
                     />
                 </div>
+
+                {/* Type de demande */}
+                <div className="space-y-2">
+                    <label
+                        htmlFor="type"
+                        className="block font-bold text-sm uppercase tracking-wide text-[#002364]"
+                    >
+                        Type de demande*
+                    </label>
+                    <select
+                        id="type"
+                        name="type"
+                        required
+                        className="w-full rounded px-4 py-2 bg-white/80 text-gray-800 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D70064]"
+                    >
+                        <option value="">-- Sélectionnez un type --</option>
+                        <option value="conseil">Conseil stratégique</option>
+                        <option value="audit">Audit qualité</option>
+                        <option value="automatisation">Automatisation des tests</option>
+                        <option value="coaching">Coaching d’équipe QA</option>
+                        <option value="formation">Formation / sensibilisation</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
 
                 {/* Message */}
                 <div className="space-y-2">
