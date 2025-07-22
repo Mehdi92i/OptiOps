@@ -5,9 +5,14 @@ const BugHuntGame = () => {
     const [bugs, setBugs] = useState([]);
     const [score, setScore] = useState(0);
     const [showFinalScore, setShowFinalScore] = useState(false);
+    const [isHydrated, setIsHydrated] = useState(false); // 👈 ajout
 
     const timeoutRef = useRef(null);
     const intervalRef = useRef(null);
+
+    useEffect(() => {
+        setIsHydrated(true);
+    }, []);
 
     const startGame = () => {
         setIsActive(true);
@@ -30,7 +35,7 @@ const BugHuntGame = () => {
     };
 
     const spawnBug = () => {
-        const id = Math.random().toString(36).substring(7);
+        const id = crypto.randomUUID?.() || Math.random().toString(36).substring(7); // plus robuste
         const x = Math.random() * 90;
         const y = Math.random() * 90;
         const rotation = Math.random() * 360;
@@ -65,13 +70,13 @@ const BugHuntGame = () => {
                 {isActive ? 'Arrêter la chasse' : 'Chasser un bug 🐞'}
             </button>
 
-            {showFinalScore && !isActive && (
+            {showFinalScore && !isActive && isHydrated && (
                 <div className="fixed top-[4.5rem] right-4 z-50 bg-white text-[#002364] font-semibold shadow-md px-4 py-2 rounded-full border border-pink-300 text-sm">
                     🎉 Partie terminée ! Tu as attrapé <span className="text-pink-600">{score}</span> bugs !
                 </div>
             )}
 
-            {isActive && (
+            {isActive && isHydrated && (
                 <div className="fixed inset-0 z-50">
                     <div className="absolute top-4 right-4 text-white text-lg bg-black/70 px-3 py-1 rounded-full shadow-md">
                         Score : {score}

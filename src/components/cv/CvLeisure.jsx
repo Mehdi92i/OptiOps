@@ -6,7 +6,7 @@ export default function CvLeisure() {
                 <p className="text-gray-700 text-center">Football, Jeux vidéos, Cinéma, Échecs, Astronomie.</p>
 
                 <h2 className="text-2xl font-bold text-yellow-500 mb-4 text-center">Centres d'intérêt</h2>
-                <p className="text-gray-700 text-center">Innovation technologique, Accessibilité numérique, Développement durable.</p>
+                <p className="text-gray-700 text-center">Innovation technologique, IA, Développement durable.</p>
         </div>
     );
 }
