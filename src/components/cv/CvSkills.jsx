@@ -5,23 +5,30 @@ export default function CvSkills() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Expertises fonctionnelles</h3>
-                    <div className="flex flex-wrap gap-2">
-                        {["📝 Tests manuels", "🔁 Tests E2E", "🔌 Tests API", "⚡ Tests de performance", "📈 Tests de charge"].map((skill, i) => (
-                            <span key={i} className="flex items-center gap-1  text-gray-800  border-gray-300 px-3 py-1 rounded-full text-sm font-medium ">
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
+                    <ul className="list-none space-y-1 text-gray-800 text-sm">
+                        <li>📝 Tests manuels</li>
+                        <li>🔁 Tests E2E</li>
+                        <li>🔌 Tests API</li>
+                        <li>⚡ Tests de perf</li>
+                        <li>📈 Tests de charge</li>
+                        <li>📊 KPI QA</li>
+                        <li>📌 Suivi qualité & process</li>
+                        <li>🤝 Communication inter-équipes</li>
+                        <li>📂 Gestion de projet</li>
+                        <li>🧭 Pilotage d’équipe</li>
+                        <li>👥 Recrutement & onboarding</li>
+                        <li>🎯 Coaching & montée en compétences</li>
+                    </ul>
                 </div>
                 <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">Méthodologies & CI</h3>
-                    <div className="flex flex-wrap gap-2">
-                        {["🔄 CI/CD", "🧬 QAOps", "🎨 Design System QA", "📅 Agilité"].map((skill, i) => (
-                            <span key={i} className="flex items-center gap-1 text-gray-800  border-gray-300 px-3 py-1 rounded-full text-sm font-medium ">
-                                {skill}
-                            </span>
-                        ))}
-                    </div>
+                    <ul className="list-none space-y-1 text-gray-800 text-sm">
+                        <li>🔄 CI/CD - QAOps</li>
+                        <li>📅 Agilité/Cycle en V</li>
+                        <li>📊 Suivi des métriques QA</li>
+                        <li>🧠 Amélioration continue</li>
+                        <li>🧭 Pilotage des objectifs par profil</li>
+                    </ul>
                 </div>
             </div>
         </div>

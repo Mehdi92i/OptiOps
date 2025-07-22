@@ -19,7 +19,7 @@ export default function CvExperiences() {
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Leadership & coordination transverse</h4>
                                 <p className="text-gray-600">
-                                    Animation du Chapter QA, accompagnement des testeurs, participation aux comités stratégiques. Collaboration transverse avec les squads produit, IT, sécurité et CTO.
+                                    Création et animation du Chapter QA. Coordination avec les équipes produit, IT, sécurité, métier et architecture. Participation aux comités stratégiques. Gestion de prestataires pour des missions ciblées.
                                 </p>
                             </div>
                         </div>
@@ -32,7 +32,7 @@ export default function CvExperiences() {
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Définition & diffusion des bonnes pratiques</h4>
                                 <p className="text-gray-600">
-                                    Mise en place de la stratégie de tests, harmonisation des pratiques QA, documentation des process, veille technologique continue.
+                                    Définition de la stratégie de tests en lien avec les enjeux produit et métier. Mise en place et optimisation des workflows QA, documentation des process, application des méthodologies Agile (Scrum, Kanban). Veille et diffusion des bonnes pratiques QA.
                                 </p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ export default function CvExperiences() {
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Support aux équipes & accompagnement au changement</h4>
                                 <p className="text-gray-600">
-                                    Conseil aux développeurs et PO, collaboration étroite avec les autres chapter leads pour faire évoluer les méthodes, intégration des tests dans les outils CI/CD.
+                                    Automatisation des tests (E2E, API, performance avec K6) via une CI Bitbucket. Accompagnement des développeurs et PO dans l’intégration des tests dans les outils de delivery. Sensibilisation à la culture QAOps au sein des équipes R&D.
                                 </p>
                             </div>
                         </div>
@@ -58,7 +58,19 @@ export default function CvExperiences() {
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Montée en compétence & recrutement</h4>
                                 <p className="text-gray-600">
-                                    Suivi des performances, définition des objectifs individuels, coaching, recrutement et onboarding des QA.
+                                    Coaching quotidien des QA, création d’une communauté de testeurs, montée en compétence, suivi des KPI, définition des objectifs individuels et recrutement.
+                                </p>
+                            </div>
+                        </div>
+                        {/* Bloc 5 - Projets majeurs */}
+                        <div className="flex items-start space-x-4">
+                            <div className="p-2 rounded">
+                                <span className="text-yellow-600 text-2xl">🚀</span>
+                            </div>
+                            <div>
+                                <h4 className="text-lg font-semibold text-gray-700">Projets majeurs</h4>
+                                <p className="text-gray-600">
+                                    Industrialisation des tests manuels et automatisés, a de la TNR pour accélérer les validations, mise en place d’une culture QAOps et de KPIs QA
                                 </p>
                             </div>
                         </div>
