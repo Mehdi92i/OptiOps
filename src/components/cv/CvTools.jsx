@@ -8,8 +8,6 @@ export default function CvTools() {
                     <div className="flex flex-wrap gap-2">
                         {[
                             "🧪 Cypress",
-                            "🧭 Selenium WebDriver",
-                            "📦 Jest",
                             "🧰 Katalon",
                             "📈 K6",
                             "💻 JavaScript",
