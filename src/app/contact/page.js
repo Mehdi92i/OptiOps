@@ -14,7 +14,7 @@ export default function Contact() {
                         <span className="text-[#D70064]">collaborer</span> ?
                     </h1>
                     <p className="text-lg md:text-xl text-gray-700">
-                        Que ce soit pour un accompagnement QA, un audit, ou une mission courte, je suis à votre écoute. Parlons qualité, efficacité et livraisons sereines.
+                        Que ce soit pour un accompagnement QA, un audit, je suis à votre écoute. Parlons qualité et adaptons votre besoin.
                     </p>
                 </div>
 

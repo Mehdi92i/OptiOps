@@ -35,7 +35,7 @@ export default function Home() {
                     </p>
 
                     <p className="italic text-gray-800 mt-4 text-center">
-                        ➜ Vous voulez fiabiliser vos livraisons et gagner en sérénité ?
+                        ➜ Vous voulez intégrer / fiabiliser votre qualité logicielle ?
                         Contactez-moi.
                     </p>
                 </div>
@@ -56,7 +56,7 @@ export default function Home() {
                         className="bg-white/90 text-[#412761] rounded-2xl p-6 shadow-lg text-center flex flex-col items-center hover:scale-105 transition-transform duration-300"
                     >
                         <span className="text-4xl mb-2">🧪</span>
-                        <h3 className="font-bold text-lg">Tests automatisés</h3>
+                        <h3 className="font-bold text-lg">Tests automatisés & manuels</h3>
                         <p className="text-sm text-gray-700 mt-1">E2E, API, Performance</p>
                     </Link>
 

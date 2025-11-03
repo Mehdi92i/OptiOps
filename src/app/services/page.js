@@ -22,7 +22,7 @@ export default function Services() {
             color: 'text-[#412761]',
             title: 'Tests automatisés',
             description:
-                "J’implémente ou optimise vos tests E2E, API et performance. Je travaille avec des outils comme Cypress, Postman, Jest ou K6. Objectif : automatiser intelligemment pour accélérer le feedback et fiabiliser les déploiements.",
+                "J’implémente ou optimise vos tests E2E, API et performance. Je travaille avec des outils comme Cypress, Postman ou K6. Je vous aide à automatiser intelligemment pour accélérer le feedback et fiabiliser les déploiements.",
         },
         {
             id: 'qaops',
@@ -38,7 +38,7 @@ export default function Services() {
             color: 'text-[#D70064]',
             title: 'Accompagnement',
             description:
-                "Que ce soit pour un audit QA, du coaching de testeurs, ou pour formaliser votre référentiel de tests, je vous accompagne avec des pratiques adaptées à votre structure et vos outils. L’objectif : vous rendre autonomes sur votre qualité.",
+                "Que ce soit pour un audit QA, du coaching de testeurs, ou pour formaliser votre référentiel de tests, je vous accompagne avec des pratiques adaptées à votre structure et vos outils. Mon but est de vous rendre autonomes sur votre qualité.",
         },
     ];
     
